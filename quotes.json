@@ -1,0 +1,764 @@
+[
+  {
+    "hash": "33b9cb70f80e53bd",
+    "quote": "Real stupidity beats artificial intelligence every time.",
+    "attribution": "Terry Pratchett",
+    "discovered_at": "2026-04-27T23:00:59.123586+00:00"
+  },
+  {
+    "hash": "58be8e23ce51ec27",
+    "quote": "There is some risk involved in action, there always is. But there is far more risk in failure to act.",
+    "attribution": "Harry S. Truman",
+    "discovered_at": "2026-05-08T14:20:54.458304+00:00"
+  },
+  {
+    "hash": "edc77d0ff318aea8",
+    "quote": "It’s no measure of health to be well adjusted to a profoundly sick society.",
+    "attribution": "Jiddu Krishnamurti",
+    "discovered_at": "2026-05-11T05:17:20.403151+00:00"
+  },
+  {
+    "hash": "3f5c96b2eb7d54d2",
+    "quote": "Calm and order can be just as dangerous to democracy as uneasiness and disorder.",
+    "attribution": "Hildegard Hamm-Brücher",
+    "discovered_at": "2026-05-12T09:18:22.375144+00:00"
+  },
+  {
+    "hash": "37dc3de067d5a145",
+    "quote": "Art is made to disturb. Science reassures.",
+    "attribution": "Georges Braque",
+    "discovered_at": "2026-05-12T23:19:06.348676+00:00"
+  },
+  {
+    "hash": "0255b7e74f0ef0fe",
+    "quote": "The beautiful thing about learning is nobody can take it away from you.",
+    "attribution": "B.B. King",
+    "discovered_at": "2026-05-14T10:20:40.360655+00:00"
+  },
+  {
+    "hash": "87c532dd8e05dfc2",
+    "quote": "You must write, and read, as if your life depended on it.",
+    "attribution": "Adrienne Rich",
+    "discovered_at": "2026-05-16T11:21:03.050686+00:00"
+  },
+  {
+    "hash": "391f747295dfda96",
+    "quote": "No live organism can continue for long to exist sanely under conditions of absolute reality.",
+    "attribution": "Shirley Jackson",
+    "discovered_at": "2026-05-18T15:29:42.839678+00:00"
+  },
+  {
+    "hash": "889dc5788129d66b",
+    "quote": "It is the heart of life to have a real meeting with another human being.",
+    "attribution": "Fay Honey Knopp",
+    "discovered_at": "2026-05-18T15:29:42.839700+00:00"
+  },
+  {
+    "hash": "2dbcf717e3c0cb53",
+    "quote": "I attribute my success to this—I never gave or took any excuse.",
+    "attribution": "Florence Nightingale",
+    "discovered_at": "2026-05-18T15:29:42.839709+00:00"
+  },
+  {
+    "hash": "1431d648317c5744",
+    "quote": "Works of art make rules but rules do not make works of art.",
+    "attribution": "Claude Debussy",
+    "discovered_at": "2026-05-18T15:29:42.839719+00:00"
+  },
+  {
+    "hash": "ad68c9780a893d59",
+    "quote": "I never panic when I get lost. I just change where it is I want to go.",
+    "attribution": "Rita Rudner",
+    "discovered_at": "2026-05-18T15:29:42.839724+00:00"
+  },
+  {
+    "hash": "dc872e176bf691c5",
+    "quote": "Where all think alike, no one thinks very much.",
+    "attribution": "Walter Lippmann",
+    "discovered_at": "2026-05-18T15:29:42.839731+00:00"
+  },
+  {
+    "hash": "5c4468e41a92edcf",
+    "quote": "There are two possible outcomes: if the result confirms the hypothesis, then you’ve made a measurement. If the result is contrary to the hypothesis, then you’ve made a discovery.",
+    "attribution": "Enrico Fermi",
+    "discovered_at": "2026-05-18T15:29:42.839736+00:00"
+  },
+  {
+    "hash": "26875ae153fbc6ef",
+    "quote": "All life is experience, and one level is exchanged for another only when its lesson is learned.",
+    "attribution": "Henry Ford",
+    "discovered_at": "2026-05-18T15:29:42.839741+00:00"
+  },
+  {
+    "hash": "8a56f0710a8c10c6",
+    "quote": "History is a gallery of pictures in which there are few originals and many copies.",
+    "attribution": "Alexis de Tocqueville",
+    "discovered_at": "2026-05-18T15:29:42.839746+00:00"
+  },
+  {
+    "hash": "fa555311cfe9be86",
+    "quote": "He who has a why to live can bear almost any how.",
+    "attribution": "Friedrich Nietzsche",
+    "discovered_at": "2026-05-18T15:29:42.839750+00:00"
+  },
+  {
+    "hash": "61618e3783f041a3",
+    "quote": "The truth is rarely pure and never simple.",
+    "attribution": "Oscar Wilde",
+    "discovered_at": "2026-05-18T15:29:42.839755+00:00"
+  },
+  {
+    "hash": "2b7d887d97f23f4a",
+    "quote": "No wise man ever wished to be younger.",
+    "attribution": "Jonathan Swift",
+    "discovered_at": "2026-05-18T15:29:42.839759+00:00"
+  },
+  {
+    "hash": "a75a4cb9f1f3529a",
+    "quote": "Nature never repeats herself, and the possibilities of one human soul will never be found in another.",
+    "attribution": "Elizabeth Cady Stanton",
+    "discovered_at": "2026-05-18T15:29:42.839763+00:00"
+  },
+  {
+    "hash": "55e6f0c86b82bd60",
+    "quote": "We do not wish, nor are we able, to break the link between ourselves and our forefathers.",
+    "attribution": "Taha Hussein",
+    "discovered_at": "2026-05-18T15:29:42.839770+00:00"
+  },
+  {
+    "hash": "242df55bb54736a5",
+    "quote": "Often the fear of one evil leads us into a worse.",
+    "attribution": "Nicolas Boileau-Despreaux",
+    "discovered_at": "2026-05-18T15:29:42.839774+00:00"
+  },
+  {
+    "hash": "b4ae9715e3a18221",
+    "quote": "One never notices what has been done; one can only see what remains to be done.",
+    "attribution": "Marie Curie",
+    "discovered_at": "2026-05-18T15:29:42.839778+00:00"
+  },
+  {
+    "hash": "9cc78bd41fc1e2d5",
+    "quote": "We are what we pretend to be, so we must be careful about what we pretend to be.",
+    "attribution": "Kurt Vonnegut",
+    "discovered_at": "2026-05-18T15:29:42.839782+00:00"
+  },
+  {
+    "hash": "2e351622599cd997",
+    "quote": "Prediction is very difficult, especially about the future.",
+    "attribution": "Niels Bohr",
+    "discovered_at": "2026-05-18T15:29:42.839787+00:00"
+  },
+  {
+    "hash": "9be43c49b51a42d5",
+    "quote": "My life seemed to be a series of events and accidents. Yet when I look back I see a pattern.",
+    "attribution": "Benoît Mandelbrot",
+    "discovered_at": "2026-05-18T15:29:42.839794+00:00"
+  },
+  {
+    "hash": "a73875a4959eed80",
+    "quote": "Curiosity is one of the permanent and certain characteristics of a vigorous intellect.",
+    "attribution": "Samuel Johnson",
+    "discovered_at": "2026-05-18T15:29:42.839798+00:00"
+  },
+  {
+    "hash": "ca4905c90a07f825",
+    "quote": "It is better to die for an idea that will live, than to live for an idea that will die.",
+    "attribution": "Steve Biko",
+    "discovered_at": "2026-05-18T15:29:42.839803+00:00"
+  },
+  {
+    "hash": "ec12e44254bc4ca2",
+    "quote": "If people do not believe that mathematics is simple, it is only because they do not realise how complicated life is.",
+    "attribution": "John von Neumann",
+    "discovered_at": "2026-05-18T15:29:42.839807+00:00"
+  },
+  {
+    "hash": "a4d8b0d56b7232a8",
+    "quote": "It requires a very unusual mind to undertake the analysis of the obvious.",
+    "attribution": "Alfred North Whitehead",
+    "discovered_at": "2026-05-18T15:29:42.839812+00:00"
+  },
+  {
+    "hash": "9cfdc17fe9bd8426",
+    "quote": "Sorrow is a sitar that cuts the maestro’s finger just to test the sharpness of its strings.",
+    "attribution": "Khondakar Ashraf Hossain",
+    "discovered_at": "2026-05-18T15:29:42.839817+00:00"
+  },
+  {
+    "hash": "699295cfdfe3ba75",
+    "quote": "When the sword is once drawn, the passions of men observe no bounds of moderation.",
+    "attribution": "Alexander Hamilton",
+    "discovered_at": "2026-05-18T15:29:42.839822+00:00"
+  },
+  {
+    "hash": "25fb8c36ef4045f0",
+    "quote": "Arguments hardly affect the faithful—their beliefs have an entirely different foundation.",
+    "attribution": "Paul Feyerabend",
+    "discovered_at": "2026-05-18T15:29:42.839827+00:00"
+  },
+  {
+    "hash": "fbe24a3cc18e3ffb",
+    "quote": "It is certain, in any case, that ignorance, allied with power, is the most ferocious enemy justice can have.",
+    "attribution": "James Baldwin",
+    "discovered_at": "2026-05-18T15:29:42.839832+00:00"
+  },
+  {
+    "hash": "c1efe178fb04d210",
+    "quote": "Love your enemies, for they tell you your faults.",
+    "attribution": "Benjamin Franklin",
+    "discovered_at": "2026-05-18T15:29:42.839837+00:00"
+  },
+  {
+    "hash": "21af8dd8bd991589",
+    "quote": "Words are the most powerful drug used by mankind.",
+    "attribution": "Rudyard Kipling",
+    "discovered_at": "2026-05-18T15:29:42.839841+00:00"
+  },
+  {
+    "hash": "6339d32782ffd887",
+    "quote": "Experience is what you get while looking for something else.",
+    "attribution": "Federico Fellini",
+    "discovered_at": "2026-05-18T15:29:42.839846+00:00"
+  },
+  {
+    "hash": "8d90e01dece67bd4",
+    "quote": "The further a society drifts from truth the more it will hate those who speak it.",
+    "attribution": "George Orwell",
+    "discovered_at": "2026-05-18T15:29:42.839862+00:00"
+  },
+  {
+    "hash": "4c88913162b56336",
+    "quote": "Get at least 8 hours of beauty sleep, 9 if you're ugly.",
+    "attribution": "Betty White",
+    "discovered_at": "2026-05-18T15:29:42.839870+00:00"
+  },
+  {
+    "hash": "b3fa2c7945d08bf0",
+    "quote": "Suspicion is a heavy armor and with its weight it impedes more than it protects.",
+    "attribution": "Robert Burns",
+    "discovered_at": "2026-05-18T15:29:42.839874+00:00"
+  },
+  {
+    "hash": "c24b709cb8d0e899",
+    "quote": "Accept praise for its worth – politeness. Be brutally frank with yourself. It’s safer.",
+    "attribution": "Nellie Bly",
+    "discovered_at": "2026-05-18T15:29:42.839880+00:00"
+  },
+  {
+    "hash": "238554a86096218d",
+    "quote": "Some minds are like soup in a poor restaurant—better left unstirred.",
+    "attribution": "P.G. Wodehouse",
+    "discovered_at": "2026-05-18T15:29:42.839885+00:00"
+  },
+  {
+    "hash": "ec1bbeb50088b588",
+    "quote": "The real question is not whether machines think but whether men do.",
+    "attribution": "B.F. Skinner",
+    "discovered_at": "2026-05-18T15:29:42.839891+00:00"
+  },
+  {
+    "hash": "07e18f82193a8169",
+    "quote": "How much more grievous are the consequences of anger than the causes of it.",
+    "attribution": "Marcus Aurelius",
+    "discovered_at": "2026-05-18T15:29:42.839896+00:00"
+  },
+  {
+    "hash": "27250c661205f38e",
+    "quote": "To understand God’s thoughts we must study statistics, for these are the measure of His purpose.",
+    "attribution": "Florence Nightingale",
+    "discovered_at": "2026-05-18T15:29:42.839901+00:00"
+  },
+  {
+    "hash": "1aa0caa118d20cc6",
+    "quote": "Hate is the wrath of the weak.",
+    "attribution": "Alphonse Daudet",
+    "discovered_at": "2026-05-18T15:29:42.839907+00:00"
+  },
+  {
+    "hash": "84b0879129f626e3",
+    "quote": "The most violent element in society is ignorance.",
+    "attribution": "Emma Goldman",
+    "discovered_at": "2026-05-18T15:29:42.839912+00:00"
+  },
+  {
+    "hash": "497aca97c0a8cb69",
+    "quote": "In the fields of observation chance favors only the prepared mind.",
+    "attribution": "Louis Pasteur",
+    "discovered_at": "2026-05-18T15:29:42.839917+00:00"
+  },
+  {
+    "hash": "1bee7e2e766d496e",
+    "quote": "Although this may seem a paradox, all exact science is dominated by the idea of approximation.",
+    "attribution": "Bertrand Russell",
+    "discovered_at": "2026-05-18T15:29:42.839922+00:00"
+  },
+  {
+    "hash": "d8633be163028037",
+    "quote": "Evil unchecked grows, evil tolerated poisons the whole system.",
+    "attribution": "Jawaharlal Nehru",
+    "discovered_at": "2026-05-18T15:29:42.839927+00:00"
+  },
+  {
+    "hash": "a3c3e58e2a3e238a",
+    "quote": "When the people are being beaten with a stick, they are not much happier if it is called “the People’s Stick”.",
+    "attribution": "Mikhail Bakunin",
+    "discovered_at": "2026-05-18T15:29:42.839933+00:00"
+  },
+  {
+    "hash": "b18ec3f20aafd360",
+    "quote": "None of us can know what we are capable of until we are tested.",
+    "attribution": "Elizabeth Blackwell",
+    "discovered_at": "2026-05-18T15:29:42.839939+00:00"
+  },
+  {
+    "hash": "fb223af6b137d175",
+    "quote": "Wisdom without honesty is mere craft and cozenage.",
+    "attribution": "Ben Jonson",
+    "discovered_at": "2026-05-18T15:29:42.839944+00:00"
+  },
+  {
+    "hash": "b5720a30265e8d2a",
+    "quote": "There is always more surface to a shattered object than a whole.",
+    "attribution": "Djuna Barnes",
+    "discovered_at": "2026-05-18T15:29:42.839952+00:00"
+  },
+  {
+    "hash": "ffb8617461ee25ed",
+    "quote": "Justice and judgment lie often a world apart.",
+    "attribution": "Emmeline Pankhurst",
+    "discovered_at": "2026-05-18T15:29:42.839960+00:00"
+  },
+  {
+    "hash": "28e73f331595f5ff",
+    "quote": "Destroying rainforest for economic gain is like burning a Renaissance painting to cook a meal.",
+    "attribution": "Edward Wilson",
+    "discovered_at": "2026-05-18T15:29:42.839966+00:00"
+  },
+  {
+    "hash": "5567859cf69dea91",
+    "quote": "A man provided with paper, pencil, and rubber, and subject to strict discipline, is in effect a universal machine.",
+    "attribution": "Alan Turing",
+    "discovered_at": "2026-05-18T15:29:42.839971+00:00"
+  },
+  {
+    "hash": "8f50457cbd2ae9f1",
+    "quote": "The imagination, like certain wild animals, will not breed in captivity.",
+    "attribution": "George Orwell",
+    "discovered_at": "2026-05-18T15:29:42.839979+00:00"
+  },
+  {
+    "hash": "dcb3dd510547f7d1",
+    "quote": "Music is a hidden arithmetic exercise of the soul, which does not know that it is counting.",
+    "attribution": "Gottfried Leibniz",
+    "discovered_at": "2026-05-18T15:29:42.839984+00:00"
+  },
+  {
+    "hash": "5770ae6e7895f7f8",
+    "quote": "If the book we are reading does not wake us, as with a fist hammering on our skulls, then why do we read it?",
+    "attribution": "Franz Kafka",
+    "discovered_at": "2026-05-18T15:29:42.839992+00:00"
+  },
+  {
+    "hash": "938f7a2bfb881115",
+    "quote": "Tell me, I forget, show me, I remember, involve me, I understand.",
+    "attribution": "Carl Orff",
+    "discovered_at": "2026-05-18T15:29:42.839998+00:00"
+  },
+  {
+    "hash": "ea9e8f661d3c1066",
+    "quote": "Space isn’t remote at all. It’s only an hour’s drive away if your car could go straight upwards.",
+    "attribution": "Fred Hoyle",
+    "discovered_at": "2026-05-18T15:29:42.840006+00:00"
+  },
+  {
+    "hash": "213b768c640fabf3",
+    "quote": "Tradition can, to be sure, participate in a creation, but it can no longer be creative itself.",
+    "attribution": "Tange Kenzo",
+    "discovered_at": "2026-05-18T15:29:42.840012+00:00"
+  },
+  {
+    "hash": "4ea61a8939beb296",
+    "quote": "Friendship makes one love life, love gives taste to death.",
+    "attribution": "Sully Prudhomme",
+    "discovered_at": "2026-05-18T15:29:42.840018+00:00"
+  },
+  {
+    "hash": "c3812e5e56929135",
+    "quote": "Soldiers are dreamers; when the guns begin they think of firelit homes, clean beds, and wives.",
+    "attribution": "Siegfried Sassoon",
+    "discovered_at": "2026-05-18T15:29:42.840024+00:00"
+  },
+  {
+    "hash": "1b19609f61b4e0ff",
+    "quote": "Everybody thinks of changing the world, but no one thinks of changing himself.",
+    "attribution": "Leo Tolstoy",
+    "discovered_at": "2026-05-18T15:29:42.840029+00:00"
+  },
+  {
+    "hash": "5904525d7d82841d",
+    "quote": "Between too early and too late, there is never more than a moment.",
+    "attribution": "Franz Werfel",
+    "discovered_at": "2026-05-18T15:29:42.840035+00:00"
+  },
+  {
+    "hash": "fb9c903a6b11c900",
+    "quote": "Life is ours to be spent, not to be saved.",
+    "attribution": "D. H. Lawrence",
+    "discovered_at": "2026-05-18T15:29:42.840041+00:00"
+  },
+  {
+    "hash": "e73ddc7d5555f08e",
+    "quote": "If it is art, it is not for all, and if it is for all, it is not art.",
+    "attribution": "Arnold Schoenberg",
+    "discovered_at": "2026-05-18T15:29:42.840046+00:00"
+  },
+  {
+    "hash": "afe51afd6a0bcfe2",
+    "quote": "If the power to do hard work is not a skill, it’s the best possible substitute for it.",
+    "attribution": "James A. Garfield",
+    "discovered_at": "2026-05-18T15:29:42.840057+00:00"
+  },
+  {
+    "hash": "55f07dbd443a1c90",
+    "quote": "All models are wrong but some are useful.",
+    "attribution": "George E. P. Box",
+    "discovered_at": "2026-05-18T15:29:42.840063+00:00"
+  },
+  {
+    "hash": "668ae5721c3b30c2",
+    "quote": "It is a predisposition of human nature to consider an unpleasant idea untrue, and then it is easy to find arguments against it.",
+    "attribution": "Sigmund Freud",
+    "discovered_at": "2026-05-18T15:29:42.840069+00:00"
+  },
+  {
+    "hash": "68e0d20da4a2c055",
+    "quote": "Error does not end with youth but increases in the man.",
+    "attribution": "W. H. Audin",
+    "discovered_at": "2026-05-18T15:29:42.840075+00:00"
+  },
+  {
+    "hash": "974afc544dc2923c",
+    "quote": "The truth is, all might be free if they valued freedom, and defended it as they ought.",
+    "attribution": "Samuel Adams",
+    "discovered_at": "2026-05-18T15:29:42.840081+00:00"
+  },
+  {
+    "hash": "2f353cac086b58e5",
+    "quote": "If we are to better the future, we must disturb the present.",
+    "attribution": "Catherine Booth",
+    "discovered_at": "2026-05-18T15:29:42.840087+00:00"
+  },
+  {
+    "hash": "57fe37d0876261b3",
+    "quote": "Do what you feel in your heart is right, for you’ll be criticised for it anyway.",
+    "attribution": "Eleanor Roosevelt",
+    "discovered_at": "2026-05-18T15:29:42.840093+00:00"
+  },
+  {
+    "hash": "fffdf7e837965a25",
+    "quote": "Politics is the art of choosing between the disastrous and the unpalatable.",
+    "attribution": "John Kenneth Galbraith",
+    "discovered_at": "2026-05-18T15:29:42.840099+00:00"
+  },
+  {
+    "hash": "5d4a6f4577f5bea9",
+    "quote": "Fortitude is the guard and support of the other virtues.",
+    "attribution": "John Locke",
+    "discovered_at": "2026-05-18T15:29:42.840106+00:00"
+  },
+  {
+    "hash": "a22d48cecba278fa",
+    "quote": "He who destroys a good book kills reason itself.",
+    "attribution": "John Milton",
+    "discovered_at": "2026-05-18T15:29:42.840112+00:00"
+  },
+  {
+    "hash": "cf339d7b658a0b48",
+    "quote": "Until we are all free, we are none of us free.",
+    "attribution": "Emma Lazarus",
+    "discovered_at": "2026-05-18T15:29:42.840118+00:00"
+  },
+  {
+    "hash": "b49737280efa3599",
+    "quote": "The pleasure lies not in discovering truth, but in searching for it.",
+    "attribution": "Leo Tolstoy",
+    "discovered_at": "2026-05-18T15:29:42.840124+00:00"
+  },
+  {
+    "hash": "b30b4ad2b58e68f2",
+    "quote": "It is a narrow mind which cannot look at a subject from various points of view.",
+    "attribution": "George Eliot",
+    "discovered_at": "2026-05-18T15:29:42.840131+00:00"
+  },
+  {
+    "hash": "579aa6ed238f05ad",
+    "quote": "Cherish those who seek the truth but beware of those who find it.",
+    "attribution": "Voltaire",
+    "discovered_at": "2026-05-18T15:29:42.840137+00:00"
+  },
+  {
+    "hash": "4c654533fd42ed1d",
+    "quote": "Anyone can be a barbarian; it requires a terrible effort to remain a civilised man.",
+    "attribution": "Leonard Woolf",
+    "discovered_at": "2026-05-18T15:29:42.840143+00:00"
+  },
+  {
+    "hash": "2a08c7fdaa566961",
+    "quote": "You do not rise to the level of your goals. You fall to the level of your systems.",
+    "attribution": "James Clear",
+    "discovered_at": "2026-05-18T15:29:42.840152+00:00"
+  },
+  {
+    "hash": "4745f4c2fe81fc92",
+    "quote": "If you want to get an idea across, wrap it up in a person.",
+    "attribution": "Ralph Bunche",
+    "discovered_at": "2026-05-18T15:29:42.840158+00:00"
+  },
+  {
+    "hash": "cd4566a22307ae0b",
+    "quote": "Be regular and orderly in your life, so that you may be violent and original in your work.",
+    "attribution": "Gustave Flaubert",
+    "discovered_at": "2026-05-18T15:29:42.840164+00:00"
+  },
+  {
+    "hash": "9b780389902d1070",
+    "quote": "The essence of the independent mind lies not in what it thinks, but in how it thinks.",
+    "attribution": "Christopher Hitchens",
+    "discovered_at": "2026-05-18T15:29:42.840173+00:00"
+  },
+  {
+    "hash": "7ecb7924b18a175f",
+    "quote": "I will take fate by the throat; it will never bend me completely to its will.",
+    "attribution": "Ludwig van Beethoven",
+    "discovered_at": "2026-05-18T15:29:42.840179+00:00"
+  },
+  {
+    "hash": "056e72257d0d3690",
+    "quote": "Rules have no existence outside of individuals.",
+    "attribution": "Henri Matisse",
+    "discovered_at": "2026-05-18T15:29:42.840186+00:00"
+  },
+  {
+    "hash": "aa759fe9faea9a81",
+    "quote": "Write it on your heart that every day is the best day in the year.",
+    "attribution": "Ralph Waldo Emerson",
+    "discovered_at": "2026-05-18T15:29:42.840206+00:00"
+  },
+  {
+    "hash": "2130300db9f3ded2",
+    "quote": "It is only afterward that a new idea seems reasonable.",
+    "attribution": "Isaac Asimov",
+    "discovered_at": "2026-05-18T15:29:42.840213+00:00"
+  },
+  {
+    "hash": "98990b55b0d9a7cc",
+    "quote": "You don't become confident by shouting affirmations in the mirror, but by having a stack of undeniable proof that you are who you say you are. Outwork your self doubt.",
+    "attribution": "Alex Hormozi",
+    "discovered_at": "2026-05-18T15:29:42.840220+00:00"
+  },
+  {
+    "hash": "eb4b705ad3875a1f",
+    "quote": "If you aren’t in over your head, how do you know how tall you are?",
+    "attribution": "T.S. Eliot",
+    "discovered_at": "2026-05-18T15:29:42.840228+00:00"
+  },
+  {
+    "hash": "be887af533074d60",
+    "quote": "Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.",
+    "attribution": "Nikola Tesla",
+    "discovered_at": "2026-05-18T15:29:42.840235+00:00"
+  },
+  {
+    "hash": "1988f7f955501433",
+    "quote": "Success is often achieved by those who don’t know that failure is inevitable.",
+    "attribution": "Coco Chanel",
+    "discovered_at": "2026-05-18T15:29:42.840242+00:00"
+  },
+  {
+    "hash": "f1c5aa45b377837f",
+    "quote": "For there is nothing lost, that may be found, if sought.",
+    "attribution": "Edmund Spenser",
+    "discovered_at": "2026-05-18T15:29:42.840249+00:00"
+  },
+  {
+    "hash": "526b5090ffbe6c26",
+    "quote": "One of the deep secrets of life is that all that is really worth doing is what we do for others.",
+    "attribution": "Lewis Carroll",
+    "discovered_at": "2026-05-18T15:29:42.840256+00:00"
+  },
+  {
+    "hash": "83605e7159c83338",
+    "quote": "A learned fool is more a fool than an ignorant fool.",
+    "attribution": "Molière",
+    "discovered_at": "2026-05-18T15:29:42.840263+00:00"
+  },
+  {
+    "hash": "3c5dc6fc4be3e733",
+    "quote": "Conversation enriches the understanding, but solitude is the school of genius.",
+    "attribution": "Edward Gibbon",
+    "discovered_at": "2026-05-18T15:29:42.840272+00:00"
+  },
+  {
+    "hash": "15379e9a1b8e9967",
+    "quote": "Power, like love, is easier to experience than to define or measure.",
+    "attribution": "Joseph Nye",
+    "discovered_at": "2026-05-18T15:29:42.840279+00:00"
+  },
+  {
+    "hash": "8a55fad899b588af",
+    "quote": "When you light a candle, you also cast a shadow.",
+    "attribution": "Ursula K. Le Guin",
+    "discovered_at": "2026-05-18T15:29:42.840286+00:00"
+  },
+  {
+    "hash": "102f95a55afaa4c7",
+    "quote": "Life shrinks or expands to one's courage.",
+    "attribution": "Anaïs Nin",
+    "discovered_at": "2026-05-18T15:29:42.840293+00:00"
+  },
+  {
+    "hash": "51947aa49fdfc2c8",
+    "quote": "Success consists of going from failure to failure without loss of enthusiasm.",
+    "attribution": "Winston S. Churchill",
+    "discovered_at": "2026-05-18T15:29:42.840300+00:00"
+  },
+  {
+    "hash": "9695854eabf5e556",
+    "quote": "If you don’t have enemies, you don’t have character.",
+    "attribution": "Paul Newman",
+    "discovered_at": "2026-05-18T15:29:42.840310+00:00"
+  },
+  {
+    "hash": "8be50f2a4fc342ad",
+    "quote": "There is not past, no future; everything flows in an eternal present.",
+    "attribution": "James Joyce",
+    "discovered_at": "2026-05-18T15:29:42.840317+00:00"
+  },
+  {
+    "hash": "8dec6d3ccfbd0796",
+    "quote": "Prejudice is more violent the blinder it is.",
+    "attribution": "Elizabeth Blackwell",
+    "discovered_at": "2026-05-18T15:29:42.840325+00:00"
+  },
+  {
+    "hash": "971803d81f624279",
+    "quote": "If honour were profitable, everybody would be honourable.",
+    "attribution": "Sir Thomas More",
+    "discovered_at": "2026-05-18T15:29:42.840353+00:00"
+  },
+  {
+    "hash": "db58e757f33d5969",
+    "quote": "Power concedes nothing without a demand. It never did, and it never will.",
+    "attribution": "Frederick Douglass",
+    "discovered_at": "2026-05-18T15:29:42.840361+00:00"
+  },
+  {
+    "hash": "313eebf2a52dcc4a",
+    "quote": "For us, there is only the trying. The rest is not our business.",
+    "attribution": "T.S. Eliot",
+    "discovered_at": "2026-05-18T15:29:42.840368+00:00"
+  },
+  {
+    "hash": "76e7cac3f2c12f57",
+    "quote": "People who never get carried away should be.",
+    "attribution": "Malcolm Forbes",
+    "discovered_at": "2026-05-18T15:29:42.840376+00:00"
+  },
+  {
+    "hash": "94f86beaa834f41a",
+    "quote": "You have to be slightly blind to believe in any cause.",
+    "attribution": "Elizabeth Smart",
+    "discovered_at": "2026-05-18T15:29:42.840383+00:00"
+  },
+  {
+    "hash": "43a76900456161aa",
+    "quote": "Time is a great teacher, but unfortunately it kills all its pupils.",
+    "attribution": "Hector Berlioz",
+    "discovered_at": "2026-05-18T15:29:42.840390+00:00"
+  },
+  {
+    "hash": "e6232ab12592b553",
+    "quote": "Fear cannot be banished, but it can be calm and without panic; it can be mitigated by reason and evaluation.",
+    "attribution": "Vannevar Bush",
+    "discovered_at": "2026-05-18T15:29:42.840397+00:00"
+  },
+  {
+    "hash": "0735a0028743ac44",
+    "quote": "We know not through our intellect, but through our experience.",
+    "attribution": "Maurice Merleau-Ponty",
+    "discovered_at": "2026-05-18T15:29:42.840405+00:00"
+  },
+  {
+    "hash": "32ac7715c8176179",
+    "quote": "If you don’t like someone’s story, write your own.",
+    "attribution": "Chinua Achebe",
+    "discovered_at": "2026-05-18T15:29:42.840412+00:00"
+  },
+  {
+    "hash": "e725a5ceadada414",
+    "quote": "Have nothing in your house that you do not know to be useful, or believe to be beautiful.",
+    "attribution": "William Morris",
+    "discovered_at": "2026-05-18T15:29:42.840420+00:00"
+  },
+  {
+    "hash": "ee4e6661f73bb0cc",
+    "quote": "I write because I don’t know what I think until I read what I say.",
+    "attribution": "Flannery O’Connor",
+    "discovered_at": "2026-05-18T15:29:42.840429+00:00"
+  },
+  {
+    "hash": "32ff4798cf9f847c",
+    "quote": "Conquer yourself rather than the world.",
+    "attribution": "René Descartes",
+    "discovered_at": "2026-05-18T15:29:42.840437+00:00"
+  },
+  {
+    "hash": "e4cfc8c3ee6f81b6",
+    "quote": "When you want to fool the world, tell the truth.",
+    "attribution": "Otto von Bismarck",
+    "discovered_at": "2026-05-18T15:29:42.840444+00:00"
+  },
+  {
+    "hash": "9efc339d1bbc0a87",
+    "quote": "Hell is truth seen too late.",
+    "attribution": "Thomas Hobbes",
+    "discovered_at": "2026-05-18T15:29:42.840452+00:00"
+  },
+  {
+    "hash": "21a11b95b107442f",
+    "quote": "Language is the main instrument of man’s refusal to accept the world as it is.",
+    "attribution": "George Steiner",
+    "discovered_at": "2026-05-18T15:29:42.840463+00:00"
+  },
+  {
+    "hash": "82c5db49e92aa31b",
+    "quote": "The lack of a sense of history is the damnation of the modern world.",
+    "attribution": "Robert Penn Warren",
+    "discovered_at": "2026-05-18T15:29:42.840471+00:00"
+  },
+  {
+    "hash": "716a0ed6eb3d9f65",
+    "quote": "God is name we give to the blanket overt he mystery to give it shape.",
+    "attribution": "ACDC's roadie",
+    "discovered_at": "2026-05-18T15:29:42.840479+00:00"
+  },
+  {
+    "hash": "c1e13f7f19f815ca",
+    "quote": "Work is the best of narcotics, providing the patient be strong enough to take it.",
+    "attribution": "Beatrice Webb",
+    "discovered_at": "2026-05-18T15:29:42.840489+00:00"
+  },
+  {
+    "hash": "45c814d2a25504be",
+    "quote": "Some men are born mediocre, some men achieve mediocrity, and some men have mediocrity thrust upon them.",
+    "attribution": "Joseph Heller",
+    "discovered_at": "2026-05-18T15:29:42.840497+00:00"
+  },
+  {
+    "hash": "e6820d3ea43651e4",
+    "quote": "It is impossible for a man to learn what he thinks he already knows.",
+    "attribution": "Epictetus",
+    "discovered_at": "2026-05-18T15:29:42.840509+00:00"
+  }
+]
