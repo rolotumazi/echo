@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> You can no more win a war than you can win an earthquake.
+
+— **Jeannette Rankin**  *2026-05-18*
+
+---
+
 > It is impossible for a man to learn what he thinks he already knows.
 
 — **Epictetus**  *2026-05-18*
@@ -768,4 +774,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_127 quotes · last sync 2026-05-18 15:30 UTC_
+_128 quotes · last sync 2026-05-18 19:22 UTC_
