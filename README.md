@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
+
+— **Malcolm X**
+
+---
+
 > You can no more win a war than you can win an earthquake.
 
 — **Jeannette Rankin**
@@ -774,4 +780,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_128 quotes_
+_129 quotes_
