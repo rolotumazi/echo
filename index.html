@@ -26,6 +26,19 @@
   header { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin-bottom: 2rem; }
   h1 { font-size: 1.6rem; margin: 0; letter-spacing: 0.02em; }
   header p { color: var(--muted); margin: 0.35rem 0 0; font-size: 0.95rem; }
+  .hero {
+    margin: 2rem 0;
+    padding: 1.5rem 1.25rem;
+    border-left: 3px solid var(--accent);
+    background: rgba(122, 63, 0, 0.05);
+    border-radius: 0 4px 4px 0;
+  }
+  @media (prefers-color-scheme: dark) {
+    .hero { background: rgba(232, 169, 107, 0.07); }
+  }
+  .hero blockquote { font-size: 1.35rem; line-height: 1.45; }
+  .hero .meta { margin-top: 0.75rem; }
+  .hero[hidden] { display: none; }
   .search { margin: 1.25rem 0 0; display: flex; align-items: baseline; gap: 0.75rem; }
   .search input {
     flex: 1;
@@ -63,12 +76,16 @@
 <body>
 <header>
   <h1>echo</h1>
-  <p>A growing collection of quotes.</p>
-  <div class="search">
-    <input id="q" type="search" placeholder="Search quotes or authors…" autocomplete="off" autofocus>
-    <span class="count" id="count"></span>
-  </div>
+  <p>A growing collection of quotes gathered from <a href="https://www.economist.com/the-world-in-brief">The Economist's daily brief</a> and other sources. Auto-updated.</p>
 </header>
+<aside class="hero" id="hero" hidden>
+  <blockquote id="hero-quote"></blockquote>
+  <p class="meta"><span class="attribution" id="hero-attr"></span></p>
+</aside>
+<div class="search">
+  <input id="q" type="search" placeholder="Search quotes or authors…" autocomplete="off">
+  <span class="count" id="count"></span>
+</div>
 <main id="quotes">
 
 <article class="quote" data-search="You can no more win a war than you can win an earthquake. Jeannette Rankin">
@@ -594,7 +611,10 @@
   const input = document.getElementById('q');
   const count = document.getElementById('count');
   const empty = document.getElementById('empty');
-  const quotes = Array.from(document.querySelectorAll('.quote'));
+  const hero = document.getElementById('hero');
+  const heroQuote = document.getElementById('hero-quote');
+  const heroAttr = document.getElementById('hero-attr');
+  const quotes = Array.from(document.querySelectorAll('main .quote'));
   const total = quotes.length;
   const haystacks = quotes.map(el => (el.dataset.search || '').toLowerCase());
   const originals = quotes.map(el => ({
@@ -612,6 +632,14 @@
     if (!term) return escapeHTML(text);
     const re = new RegExp('(' + escapeRE(term) + ')', 'gi');
     return escapeHTML(text).replace(re, '<mark>$1</mark>');
+  }
+
+  if (total > 0) {
+    const pick = originals[Math.floor(Math.random() * total)];
+    heroQuote.textContent = pick.quote.textContent;
+    if (pick.attr) heroAttr.textContent = pick.attr.textContent;
+    else heroAttr.parentElement.remove();
+    hero.hidden = false;
   }
 
   function apply() {
@@ -634,6 +662,7 @@
     });
     count.textContent = term ? `${shown} of ${total}` : `${total} quotes`;
     empty.classList.toggle('show', shown === 0);
+    if (hero) hero.hidden = term.length > 0 || total === 0;
   }
 
   input.addEventListener('input', apply);
