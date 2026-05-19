@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> That so few now dare to be eccentric, marks the chief danger of the time.
+
+— **John Stuart Mill**
+
+---
+
 > Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
 
 — **Malcolm X**
@@ -780,4 +786,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_129 quotes_
+_130 quotes_
