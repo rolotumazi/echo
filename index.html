@@ -26,7 +26,21 @@
   header { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin-bottom: 2rem; }
   h1 { font-size: 1.6rem; margin: 0; letter-spacing: 0.02em; }
   header p { color: var(--muted); margin: 0.35rem 0 0; font-size: 0.95rem; }
+  .search { margin: 1.25rem 0 0; display: flex; align-items: baseline; gap: 0.75rem; }
+  .search input {
+    flex: 1;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    color: var(--fg);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  .search input:focus { outline: none; border-color: var(--accent); }
+  .search .count { color: var(--muted); font-size: 0.85rem; font-style: italic; white-space: nowrap; }
   .quote { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+  .quote.hidden { display: none; }
   .quote:last-of-type { border-bottom: 0; }
   blockquote {
     margin: 0;
@@ -37,8 +51,11 @@
   }
   blockquote::before { content: open-quote; color: var(--accent); margin-right: 0.1em; }
   blockquote::after { content: close-quote; color: var(--accent); margin-left: 0.05em; }
+  mark { background: rgba(232, 169, 107, 0.35); color: inherit; padding: 0 0.1em; border-radius: 2px; }
   .meta { margin-top: 0.6rem; font-size: 0.9rem; color: var(--muted); font-style: normal; }
   .attribution { color: var(--fg); font-weight: 600; }
+  .empty { color: var(--muted); font-style: italic; text-align: center; padding: 2rem 0; display: none; }
+  .empty.show { display: block; }
   footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; text-align: center; }
   a { color: var(--accent); }
 </style>
@@ -47,525 +64,581 @@
 <header>
   <h1>echo</h1>
   <p>A growing collection of quotes.</p>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search quotes or authors…" autocomplete="off" autofocus>
+    <span class="count" id="count"></span>
+  </div>
 </header>
-<main>
+<main id="quotes">
 
-<article class="quote">
+<article class="quote" data-search="You can no more win a war than you can win an earthquake. Jeannette Rankin">
   <blockquote>You can no more win a war than you can win an earthquake.</blockquote>
-  <p class="meta"><span class="attribution">Jeannette Rankin</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Jeannette Rankin</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It is impossible for a man to learn what he thinks he already knows. Epictetus">
   <blockquote>It is impossible for a man to learn what he thinks he already knows.</blockquote>
-  <p class="meta"><span class="attribution">Epictetus</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Epictetus</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Some men are born mediocre, some men achieve mediocrity, and some men have mediocrity thrust upon them. Joseph Heller">
   <blockquote>Some men are born mediocre, some men achieve mediocrity, and some men have mediocrity thrust upon them.</blockquote>
-  <p class="meta"><span class="attribution">Joseph Heller</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Joseph Heller</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Work is the best of narcotics, providing the patient be strong enough to take it. Beatrice Webb">
   <blockquote>Work is the best of narcotics, providing the patient be strong enough to take it.</blockquote>
-  <p class="meta"><span class="attribution">Beatrice Webb</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Beatrice Webb</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="God is name we give to the blanket overt he mystery to give it shape. ACDC's roadie">
   <blockquote>God is name we give to the blanket overt he mystery to give it shape.</blockquote>
-  <p class="meta"><span class="attribution">ACDC's roadie</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">ACDC's roadie</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The lack of a sense of history is the damnation of the modern world. Robert Penn Warren">
   <blockquote>The lack of a sense of history is the damnation of the modern world.</blockquote>
-  <p class="meta"><span class="attribution">Robert Penn Warren</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Robert Penn Warren</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Language is the main instrument of man’s refusal to accept the world as it is. George Steiner">
   <blockquote>Language is the main instrument of man’s refusal to accept the world as it is.</blockquote>
-  <p class="meta"><span class="attribution">George Steiner</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">George Steiner</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Hell is truth seen too late. Thomas Hobbes">
   <blockquote>Hell is truth seen too late.</blockquote>
-  <p class="meta"><span class="attribution">Thomas Hobbes</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Thomas Hobbes</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="When you want to fool the world, tell the truth. Otto von Bismarck">
   <blockquote>When you want to fool the world, tell the truth.</blockquote>
-  <p class="meta"><span class="attribution">Otto von Bismarck</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Otto von Bismarck</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Conquer yourself rather than the world. René Descartes">
   <blockquote>Conquer yourself rather than the world.</blockquote>
-  <p class="meta"><span class="attribution">René Descartes</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">René Descartes</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="I write because I don’t know what I think until I read what I say. Flannery O’Connor">
   <blockquote>I write because I don’t know what I think until I read what I say.</blockquote>
-  <p class="meta"><span class="attribution">Flannery O’Connor</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Flannery O’Connor</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Have nothing in your house that you do not know to be useful, or believe to be beautiful. William Morris">
   <blockquote>Have nothing in your house that you do not know to be useful, or believe to be beautiful.</blockquote>
-  <p class="meta"><span class="attribution">William Morris</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">William Morris</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If you don’t like someone’s story, write your own. Chinua Achebe">
   <blockquote>If you don’t like someone’s story, write your own.</blockquote>
-  <p class="meta"><span class="attribution">Chinua Achebe</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Chinua Achebe</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="We know not through our intellect, but through our experience. Maurice Merleau-Ponty">
   <blockquote>We know not through our intellect, but through our experience.</blockquote>
-  <p class="meta"><span class="attribution">Maurice Merleau-Ponty</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Maurice Merleau-Ponty</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Fear cannot be banished, but it can be calm and without panic; it can be mitigated by reason and evaluation. Vannevar Bush">
   <blockquote>Fear cannot be banished, but it can be calm and without panic; it can be mitigated by reason and evaluation.</blockquote>
-  <p class="meta"><span class="attribution">Vannevar Bush</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Vannevar Bush</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Time is a great teacher, but unfortunately it kills all its pupils. Hector Berlioz">
   <blockquote>Time is a great teacher, but unfortunately it kills all its pupils.</blockquote>
-  <p class="meta"><span class="attribution">Hector Berlioz</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Hector Berlioz</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="You have to be slightly blind to believe in any cause. Elizabeth Smart">
   <blockquote>You have to be slightly blind to believe in any cause.</blockquote>
-  <p class="meta"><span class="attribution">Elizabeth Smart</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Elizabeth Smart</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="People who never get carried away should be. Malcolm Forbes">
   <blockquote>People who never get carried away should be.</blockquote>
-  <p class="meta"><span class="attribution">Malcolm Forbes</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Malcolm Forbes</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="For us, there is only the trying. The rest is not our business. T.S. Eliot">
   <blockquote>For us, there is only the trying. The rest is not our business.</blockquote>
-  <p class="meta"><span class="attribution">T.S. Eliot</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">T.S. Eliot</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Power concedes nothing without a demand. It never did, and it never will. Frederick Douglass">
   <blockquote>Power concedes nothing without a demand. It never did, and it never will.</blockquote>
-  <p class="meta"><span class="attribution">Frederick Douglass</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Frederick Douglass</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If honour were profitable, everybody would be honourable. Sir Thomas More">
   <blockquote>If honour were profitable, everybody would be honourable.</blockquote>
-  <p class="meta"><span class="attribution">Sir Thomas More</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Sir Thomas More</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Prejudice is more violent the blinder it is. Elizabeth Blackwell">
   <blockquote>Prejudice is more violent the blinder it is.</blockquote>
-  <p class="meta"><span class="attribution">Elizabeth Blackwell</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Elizabeth Blackwell</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="There is not past, no future; everything flows in an eternal present. James Joyce">
   <blockquote>There is not past, no future; everything flows in an eternal present.</blockquote>
-  <p class="meta"><span class="attribution">James Joyce</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">James Joyce</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If you don’t have enemies, you don’t have character. Paul Newman">
   <blockquote>If you don’t have enemies, you don’t have character.</blockquote>
-  <p class="meta"><span class="attribution">Paul Newman</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Paul Newman</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Success consists of going from failure to failure without loss of enthusiasm. Winston S. Churchill">
   <blockquote>Success consists of going from failure to failure without loss of enthusiasm.</blockquote>
-  <p class="meta"><span class="attribution">Winston S. Churchill</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Winston S. Churchill</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Life shrinks or expands to one's courage. Anaïs Nin">
   <blockquote>Life shrinks or expands to one's courage.</blockquote>
-  <p class="meta"><span class="attribution">Anaïs Nin</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Anaïs Nin</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="When you light a candle, you also cast a shadow. Ursula K. Le Guin">
   <blockquote>When you light a candle, you also cast a shadow.</blockquote>
-  <p class="meta"><span class="attribution">Ursula K. Le Guin</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Ursula K. Le Guin</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Power, like love, is easier to experience than to define or measure. Joseph Nye">
   <blockquote>Power, like love, is easier to experience than to define or measure.</blockquote>
-  <p class="meta"><span class="attribution">Joseph Nye</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Joseph Nye</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Conversation enriches the understanding, but solitude is the school of genius. Edward Gibbon">
   <blockquote>Conversation enriches the understanding, but solitude is the school of genius.</blockquote>
-  <p class="meta"><span class="attribution">Edward Gibbon</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Edward Gibbon</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="A learned fool is more a fool than an ignorant fool. Molière">
   <blockquote>A learned fool is more a fool than an ignorant fool.</blockquote>
-  <p class="meta"><span class="attribution">Molière</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Molière</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="One of the deep secrets of life is that all that is really worth doing is what we do for others. Lewis Carroll">
   <blockquote>One of the deep secrets of life is that all that is really worth doing is what we do for others.</blockquote>
-  <p class="meta"><span class="attribution">Lewis Carroll</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Lewis Carroll</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="For there is nothing lost, that may be found, if sought. Edmund Spenser">
   <blockquote>For there is nothing lost, that may be found, if sought.</blockquote>
-  <p class="meta"><span class="attribution">Edmund Spenser</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Edmund Spenser</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Success is often achieved by those who don’t know that failure is inevitable. Coco Chanel">
   <blockquote>Success is often achieved by those who don’t know that failure is inevitable.</blockquote>
-  <p class="meta"><span class="attribution">Coco Chanel</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Coco Chanel</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more. Nikola Tesla">
   <blockquote>Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.</blockquote>
-  <p class="meta"><span class="attribution">Nikola Tesla</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Nikola Tesla</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If you aren’t in over your head, how do you know how tall you are? T.S. Eliot">
   <blockquote>If you aren’t in over your head, how do you know how tall you are?</blockquote>
-  <p class="meta"><span class="attribution">T.S. Eliot</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">T.S. Eliot</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="You don't become confident by shouting affirmations in the mirror, but by having a stack of undeniable proof that you are who you say you are. Outwork your self doubt. Alex Hormozi">
   <blockquote>You don't become confident by shouting affirmations in the mirror, but by having a stack of undeniable proof that you are who you say you are. Outwork your self doubt.</blockquote>
-  <p class="meta"><span class="attribution">Alex Hormozi</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Alex Hormozi</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It is only afterward that a new idea seems reasonable. Isaac Asimov">
   <blockquote>It is only afterward that a new idea seems reasonable.</blockquote>
-  <p class="meta"><span class="attribution">Isaac Asimov</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Isaac Asimov</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Write it on your heart that every day is the best day in the year. Ralph Waldo Emerson">
   <blockquote>Write it on your heart that every day is the best day in the year.</blockquote>
-  <p class="meta"><span class="attribution">Ralph Waldo Emerson</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Ralph Waldo Emerson</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Rules have no existence outside of individuals. Henri Matisse">
   <blockquote>Rules have no existence outside of individuals.</blockquote>
-  <p class="meta"><span class="attribution">Henri Matisse</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Henri Matisse</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="I will take fate by the throat; it will never bend me completely to its will. Ludwig van Beethoven">
   <blockquote>I will take fate by the throat; it will never bend me completely to its will.</blockquote>
-  <p class="meta"><span class="attribution">Ludwig van Beethoven</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Ludwig van Beethoven</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The essence of the independent mind lies not in what it thinks, but in how it thinks. Christopher Hitchens">
   <blockquote>The essence of the independent mind lies not in what it thinks, but in how it thinks.</blockquote>
-  <p class="meta"><span class="attribution">Christopher Hitchens</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Christopher Hitchens</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Be regular and orderly in your life, so that you may be violent and original in your work. Gustave Flaubert">
   <blockquote>Be regular and orderly in your life, so that you may be violent and original in your work.</blockquote>
-  <p class="meta"><span class="attribution">Gustave Flaubert</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Gustave Flaubert</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If you want to get an idea across, wrap it up in a person. Ralph Bunche">
   <blockquote>If you want to get an idea across, wrap it up in a person.</blockquote>
-  <p class="meta"><span class="attribution">Ralph Bunche</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Ralph Bunche</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="You do not rise to the level of your goals. You fall to the level of your systems. James Clear">
   <blockquote>You do not rise to the level of your goals. You fall to the level of your systems.</blockquote>
-  <p class="meta"><span class="attribution">James Clear</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">James Clear</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Anyone can be a barbarian; it requires a terrible effort to remain a civilised man. Leonard Woolf">
   <blockquote>Anyone can be a barbarian; it requires a terrible effort to remain a civilised man.</blockquote>
-  <p class="meta"><span class="attribution">Leonard Woolf</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Leonard Woolf</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Cherish those who seek the truth but beware of those who find it. Voltaire">
   <blockquote>Cherish those who seek the truth but beware of those who find it.</blockquote>
-  <p class="meta"><span class="attribution">Voltaire</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Voltaire</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It is a narrow mind which cannot look at a subject from various points of view. George Eliot">
   <blockquote>It is a narrow mind which cannot look at a subject from various points of view.</blockquote>
-  <p class="meta"><span class="attribution">George Eliot</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">George Eliot</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The pleasure lies not in discovering truth, but in searching for it. Leo Tolstoy">
   <blockquote>The pleasure lies not in discovering truth, but in searching for it.</blockquote>
-  <p class="meta"><span class="attribution">Leo Tolstoy</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Leo Tolstoy</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Until we are all free, we are none of us free. Emma Lazarus">
   <blockquote>Until we are all free, we are none of us free.</blockquote>
-  <p class="meta"><span class="attribution">Emma Lazarus</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Emma Lazarus</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="He who destroys a good book kills reason itself. John Milton">
   <blockquote>He who destroys a good book kills reason itself.</blockquote>
-  <p class="meta"><span class="attribution">John Milton</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">John Milton</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Fortitude is the guard and support of the other virtues. John Locke">
   <blockquote>Fortitude is the guard and support of the other virtues.</blockquote>
-  <p class="meta"><span class="attribution">John Locke</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">John Locke</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Politics is the art of choosing between the disastrous and the unpalatable. John Kenneth Galbraith">
   <blockquote>Politics is the art of choosing between the disastrous and the unpalatable.</blockquote>
-  <p class="meta"><span class="attribution">John Kenneth Galbraith</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">John Kenneth Galbraith</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Do what you feel in your heart is right, for you’ll be criticised for it anyway. Eleanor Roosevelt">
   <blockquote>Do what you feel in your heart is right, for you’ll be criticised for it anyway.</blockquote>
-  <p class="meta"><span class="attribution">Eleanor Roosevelt</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Eleanor Roosevelt</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If we are to better the future, we must disturb the present. Catherine Booth">
   <blockquote>If we are to better the future, we must disturb the present.</blockquote>
-  <p class="meta"><span class="attribution">Catherine Booth</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Catherine Booth</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The truth is, all might be free if they valued freedom, and defended it as they ought. Samuel Adams">
   <blockquote>The truth is, all might be free if they valued freedom, and defended it as they ought.</blockquote>
-  <p class="meta"><span class="attribution">Samuel Adams</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Samuel Adams</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Error does not end with youth but increases in the man. W. H. Audin">
   <blockquote>Error does not end with youth but increases in the man.</blockquote>
-  <p class="meta"><span class="attribution">W. H. Audin</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">W. H. Audin</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It is a predisposition of human nature to consider an unpleasant idea untrue, and then it is easy to find arguments against it. Sigmund Freud">
   <blockquote>It is a predisposition of human nature to consider an unpleasant idea untrue, and then it is easy to find arguments against it.</blockquote>
-  <p class="meta"><span class="attribution">Sigmund Freud</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Sigmund Freud</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="All models are wrong but some are useful. George E. P. Box">
   <blockquote>All models are wrong but some are useful.</blockquote>
-  <p class="meta"><span class="attribution">George E. P. Box</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">George E. P. Box</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If the power to do hard work is not a skill, it’s the best possible substitute for it. James A. Garfield">
   <blockquote>If the power to do hard work is not a skill, it’s the best possible substitute for it.</blockquote>
-  <p class="meta"><span class="attribution">James A. Garfield</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">James A. Garfield</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If it is art, it is not for all, and if it is for all, it is not art. Arnold Schoenberg">
   <blockquote>If it is art, it is not for all, and if it is for all, it is not art.</blockquote>
-  <p class="meta"><span class="attribution">Arnold Schoenberg</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Arnold Schoenberg</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Life is ours to be spent, not to be saved. D. H. Lawrence">
   <blockquote>Life is ours to be spent, not to be saved.</blockquote>
-  <p class="meta"><span class="attribution">D. H. Lawrence</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">D. H. Lawrence</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Between too early and too late, there is never more than a moment. Franz Werfel">
   <blockquote>Between too early and too late, there is never more than a moment.</blockquote>
-  <p class="meta"><span class="attribution">Franz Werfel</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Franz Werfel</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Everybody thinks of changing the world, but no one thinks of changing himself. Leo Tolstoy">
   <blockquote>Everybody thinks of changing the world, but no one thinks of changing himself.</blockquote>
-  <p class="meta"><span class="attribution">Leo Tolstoy</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Leo Tolstoy</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Soldiers are dreamers; when the guns begin they think of firelit homes, clean beds, and wives. Siegfried Sassoon">
   <blockquote>Soldiers are dreamers; when the guns begin they think of firelit homes, clean beds, and wives.</blockquote>
-  <p class="meta"><span class="attribution">Siegfried Sassoon</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Siegfried Sassoon</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Friendship makes one love life, love gives taste to death. Sully Prudhomme">
   <blockquote>Friendship makes one love life, love gives taste to death.</blockquote>
-  <p class="meta"><span class="attribution">Sully Prudhomme</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Sully Prudhomme</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Tradition can, to be sure, participate in a creation, but it can no longer be creative itself. Tange Kenzo">
   <blockquote>Tradition can, to be sure, participate in a creation, but it can no longer be creative itself.</blockquote>
-  <p class="meta"><span class="attribution">Tange Kenzo</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Tange Kenzo</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Space isn’t remote at all. It’s only an hour’s drive away if your car could go straight upwards. Fred Hoyle">
   <blockquote>Space isn’t remote at all. It’s only an hour’s drive away if your car could go straight upwards.</blockquote>
-  <p class="meta"><span class="attribution">Fred Hoyle</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Fred Hoyle</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Tell me, I forget, show me, I remember, involve me, I understand. Carl Orff">
   <blockquote>Tell me, I forget, show me, I remember, involve me, I understand.</blockquote>
-  <p class="meta"><span class="attribution">Carl Orff</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Carl Orff</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If the book we are reading does not wake us, as with a fist hammering on our skulls, then why do we read it? Franz Kafka">
   <blockquote>If the book we are reading does not wake us, as with a fist hammering on our skulls, then why do we read it?</blockquote>
-  <p class="meta"><span class="attribution">Franz Kafka</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Franz Kafka</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Music is a hidden arithmetic exercise of the soul, which does not know that it is counting. Gottfried Leibniz">
   <blockquote>Music is a hidden arithmetic exercise of the soul, which does not know that it is counting.</blockquote>
-  <p class="meta"><span class="attribution">Gottfried Leibniz</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Gottfried Leibniz</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The imagination, like certain wild animals, will not breed in captivity. George Orwell">
   <blockquote>The imagination, like certain wild animals, will not breed in captivity.</blockquote>
-  <p class="meta"><span class="attribution">George Orwell</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">George Orwell</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="A man provided with paper, pencil, and rubber, and subject to strict discipline, is in effect a universal machine. Alan Turing">
   <blockquote>A man provided with paper, pencil, and rubber, and subject to strict discipline, is in effect a universal machine.</blockquote>
-  <p class="meta"><span class="attribution">Alan Turing</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Alan Turing</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Destroying rainforest for economic gain is like burning a Renaissance painting to cook a meal. Edward Wilson">
   <blockquote>Destroying rainforest for economic gain is like burning a Renaissance painting to cook a meal.</blockquote>
-  <p class="meta"><span class="attribution">Edward Wilson</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Edward Wilson</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Justice and judgment lie often a world apart. Emmeline Pankhurst">
   <blockquote>Justice and judgment lie often a world apart.</blockquote>
-  <p class="meta"><span class="attribution">Emmeline Pankhurst</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Emmeline Pankhurst</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="There is always more surface to a shattered object than a whole. Djuna Barnes">
   <blockquote>There is always more surface to a shattered object than a whole.</blockquote>
-  <p class="meta"><span class="attribution">Djuna Barnes</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Djuna Barnes</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Wisdom without honesty is mere craft and cozenage. Ben Jonson">
   <blockquote>Wisdom without honesty is mere craft and cozenage.</blockquote>
-  <p class="meta"><span class="attribution">Ben Jonson</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Ben Jonson</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="None of us can know what we are capable of until we are tested. Elizabeth Blackwell">
   <blockquote>None of us can know what we are capable of until we are tested.</blockquote>
-  <p class="meta"><span class="attribution">Elizabeth Blackwell</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Elizabeth Blackwell</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="When the people are being beaten with a stick, they are not much happier if it is called “the People’s Stick”. Mikhail Bakunin">
   <blockquote>When the people are being beaten with a stick, they are not much happier if it is called “the People’s Stick”.</blockquote>
-  <p class="meta"><span class="attribution">Mikhail Bakunin</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Mikhail Bakunin</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Evil unchecked grows, evil tolerated poisons the whole system. Jawaharlal Nehru">
   <blockquote>Evil unchecked grows, evil tolerated poisons the whole system.</blockquote>
-  <p class="meta"><span class="attribution">Jawaharlal Nehru</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Jawaharlal Nehru</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Although this may seem a paradox, all exact science is dominated by the idea of approximation. Bertrand Russell">
   <blockquote>Although this may seem a paradox, all exact science is dominated by the idea of approximation.</blockquote>
-  <p class="meta"><span class="attribution">Bertrand Russell</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Bertrand Russell</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="In the fields of observation chance favors only the prepared mind. Louis Pasteur">
   <blockquote>In the fields of observation chance favors only the prepared mind.</blockquote>
-  <p class="meta"><span class="attribution">Louis Pasteur</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Louis Pasteur</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The most violent element in society is ignorance. Emma Goldman">
   <blockquote>The most violent element in society is ignorance.</blockquote>
-  <p class="meta"><span class="attribution">Emma Goldman</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Emma Goldman</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Hate is the wrath of the weak. Alphonse Daudet">
   <blockquote>Hate is the wrath of the weak.</blockquote>
-  <p class="meta"><span class="attribution">Alphonse Daudet</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Alphonse Daudet</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="To understand God’s thoughts we must study statistics, for these are the measure of His purpose. Florence Nightingale">
   <blockquote>To understand God’s thoughts we must study statistics, for these are the measure of His purpose.</blockquote>
-  <p class="meta"><span class="attribution">Florence Nightingale</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Florence Nightingale</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="How much more grievous are the consequences of anger than the causes of it. Marcus Aurelius">
   <blockquote>How much more grievous are the consequences of anger than the causes of it.</blockquote>
-  <p class="meta"><span class="attribution">Marcus Aurelius</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Marcus Aurelius</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The real question is not whether machines think but whether men do. B.F. Skinner">
   <blockquote>The real question is not whether machines think but whether men do.</blockquote>
-  <p class="meta"><span class="attribution">B.F. Skinner</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">B.F. Skinner</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Some minds are like soup in a poor restaurant—better left unstirred. P.G. Wodehouse">
   <blockquote>Some minds are like soup in a poor restaurant—better left unstirred.</blockquote>
-  <p class="meta"><span class="attribution">P.G. Wodehouse</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">P.G. Wodehouse</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Accept praise for its worth – politeness. Be brutally frank with yourself. It’s safer. Nellie Bly">
   <blockquote>Accept praise for its worth – politeness. Be brutally frank with yourself. It’s safer.</blockquote>
-  <p class="meta"><span class="attribution">Nellie Bly</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Nellie Bly</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Suspicion is a heavy armor and with its weight it impedes more than it protects. Robert Burns">
   <blockquote>Suspicion is a heavy armor and with its weight it impedes more than it protects.</blockquote>
-  <p class="meta"><span class="attribution">Robert Burns</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Robert Burns</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Get at least 8 hours of beauty sleep, 9 if you're ugly. Betty White">
   <blockquote>Get at least 8 hours of beauty sleep, 9 if you're ugly.</blockquote>
-  <p class="meta"><span class="attribution">Betty White</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Betty White</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The further a society drifts from truth the more it will hate those who speak it. George Orwell">
   <blockquote>The further a society drifts from truth the more it will hate those who speak it.</blockquote>
-  <p class="meta"><span class="attribution">George Orwell</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">George Orwell</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Experience is what you get while looking for something else. Federico Fellini">
   <blockquote>Experience is what you get while looking for something else.</blockquote>
-  <p class="meta"><span class="attribution">Federico Fellini</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Federico Fellini</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Words are the most powerful drug used by mankind. Rudyard Kipling">
   <blockquote>Words are the most powerful drug used by mankind.</blockquote>
-  <p class="meta"><span class="attribution">Rudyard Kipling</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Rudyard Kipling</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Love your enemies, for they tell you your faults. Benjamin Franklin">
   <blockquote>Love your enemies, for they tell you your faults.</blockquote>
-  <p class="meta"><span class="attribution">Benjamin Franklin</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Benjamin Franklin</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It is certain, in any case, that ignorance, allied with power, is the most ferocious enemy justice can have. James Baldwin">
   <blockquote>It is certain, in any case, that ignorance, allied with power, is the most ferocious enemy justice can have.</blockquote>
-  <p class="meta"><span class="attribution">James Baldwin</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">James Baldwin</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Arguments hardly affect the faithful—their beliefs have an entirely different foundation. Paul Feyerabend">
   <blockquote>Arguments hardly affect the faithful—their beliefs have an entirely different foundation.</blockquote>
-  <p class="meta"><span class="attribution">Paul Feyerabend</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Paul Feyerabend</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="When the sword is once drawn, the passions of men observe no bounds of moderation. Alexander Hamilton">
   <blockquote>When the sword is once drawn, the passions of men observe no bounds of moderation.</blockquote>
-  <p class="meta"><span class="attribution">Alexander Hamilton</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Alexander Hamilton</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Sorrow is a sitar that cuts the maestro’s finger just to test the sharpness of its strings. Khondakar Ashraf Hossain">
   <blockquote>Sorrow is a sitar that cuts the maestro’s finger just to test the sharpness of its strings.</blockquote>
-  <p class="meta"><span class="attribution">Khondakar Ashraf Hossain</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Khondakar Ashraf Hossain</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It requires a very unusual mind to undertake the analysis of the obvious. Alfred North Whitehead">
   <blockquote>It requires a very unusual mind to undertake the analysis of the obvious.</blockquote>
-  <p class="meta"><span class="attribution">Alfred North Whitehead</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Alfred North Whitehead</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="If people do not believe that mathematics is simple, it is only because they do not realise how complicated life is. John von Neumann">
   <blockquote>If people do not believe that mathematics is simple, it is only because they do not realise how complicated life is.</blockquote>
-  <p class="meta"><span class="attribution">John von Neumann</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">John von Neumann</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It is better to die for an idea that will live, than to live for an idea that will die. Steve Biko">
   <blockquote>It is better to die for an idea that will live, than to live for an idea that will die.</blockquote>
-  <p class="meta"><span class="attribution">Steve Biko</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Steve Biko</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Curiosity is one of the permanent and certain characteristics of a vigorous intellect. Samuel Johnson">
   <blockquote>Curiosity is one of the permanent and certain characteristics of a vigorous intellect.</blockquote>
-  <p class="meta"><span class="attribution">Samuel Johnson</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Samuel Johnson</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="My life seemed to be a series of events and accidents. Yet when I look back I see a pattern. Benoît Mandelbrot">
   <blockquote>My life seemed to be a series of events and accidents. Yet when I look back I see a pattern.</blockquote>
-  <p class="meta"><span class="attribution">Benoît Mandelbrot</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Benoît Mandelbrot</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Prediction is very difficult, especially about the future. Niels Bohr">
   <blockquote>Prediction is very difficult, especially about the future.</blockquote>
-  <p class="meta"><span class="attribution">Niels Bohr</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Niels Bohr</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="We are what we pretend to be, so we must be careful about what we pretend to be. Kurt Vonnegut">
   <blockquote>We are what we pretend to be, so we must be careful about what we pretend to be.</blockquote>
-  <p class="meta"><span class="attribution">Kurt Vonnegut</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Kurt Vonnegut</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="One never notices what has been done; one can only see what remains to be done. Marie Curie">
   <blockquote>One never notices what has been done; one can only see what remains to be done.</blockquote>
-  <p class="meta"><span class="attribution">Marie Curie</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Marie Curie</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Often the fear of one evil leads us into a worse. Nicolas Boileau-Despreaux">
   <blockquote>Often the fear of one evil leads us into a worse.</blockquote>
-  <p class="meta"><span class="attribution">Nicolas Boileau-Despreaux</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Nicolas Boileau-Despreaux</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="We do not wish, nor are we able, to break the link between ourselves and our forefathers. Taha Hussein">
   <blockquote>We do not wish, nor are we able, to break the link between ourselves and our forefathers.</blockquote>
-  <p class="meta"><span class="attribution">Taha Hussein</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Taha Hussein</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Nature never repeats herself, and the possibilities of one human soul will never be found in another. Elizabeth Cady Stanton">
   <blockquote>Nature never repeats herself, and the possibilities of one human soul will never be found in another.</blockquote>
-  <p class="meta"><span class="attribution">Elizabeth Cady Stanton</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Elizabeth Cady Stanton</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="No wise man ever wished to be younger. Jonathan Swift">
   <blockquote>No wise man ever wished to be younger.</blockquote>
-  <p class="meta"><span class="attribution">Jonathan Swift</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Jonathan Swift</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The truth is rarely pure and never simple. Oscar Wilde">
   <blockquote>The truth is rarely pure and never simple.</blockquote>
-  <p class="meta"><span class="attribution">Oscar Wilde</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Oscar Wilde</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="He who has a why to live can bear almost any how. Friedrich Nietzsche">
   <blockquote>He who has a why to live can bear almost any how.</blockquote>
-  <p class="meta"><span class="attribution">Friedrich Nietzsche</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Friedrich Nietzsche</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="History is a gallery of pictures in which there are few originals and many copies. Alexis de Tocqueville">
   <blockquote>History is a gallery of pictures in which there are few originals and many copies.</blockquote>
-  <p class="meta"><span class="attribution">Alexis de Tocqueville</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Alexis de Tocqueville</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="All life is experience, and one level is exchanged for another only when its lesson is learned. Henry Ford">
   <blockquote>All life is experience, and one level is exchanged for another only when its lesson is learned.</blockquote>
-  <p class="meta"><span class="attribution">Henry Ford</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Henry Ford</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="There are two possible outcomes: if the result confirms the hypothesis, then you’ve made a measurement. If the result is contrary to the hypothesis, then you’ve made a discovery. Enrico Fermi">
   <blockquote>There are two possible outcomes: if the result confirms the hypothesis, then you’ve made a measurement. If the result is contrary to the hypothesis, then you’ve made a discovery.</blockquote>
-  <p class="meta"><span class="attribution">Enrico Fermi</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Enrico Fermi</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Where all think alike, no one thinks very much. Walter Lippmann">
   <blockquote>Where all think alike, no one thinks very much.</blockquote>
-  <p class="meta"><span class="attribution">Walter Lippmann</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Walter Lippmann</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="I never panic when I get lost. I just change where it is I want to go. Rita Rudner">
   <blockquote>I never panic when I get lost. I just change where it is I want to go.</blockquote>
-  <p class="meta"><span class="attribution">Rita Rudner</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Rita Rudner</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Works of art make rules but rules do not make works of art. Claude Debussy">
   <blockquote>Works of art make rules but rules do not make works of art.</blockquote>
-  <p class="meta"><span class="attribution">Claude Debussy</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Claude Debussy</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="I attribute my success to this—I never gave or took any excuse. Florence Nightingale">
   <blockquote>I attribute my success to this—I never gave or took any excuse.</blockquote>
-  <p class="meta"><span class="attribution">Florence Nightingale</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Florence Nightingale</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It is the heart of life to have a real meeting with another human being. Fay Honey Knopp">
   <blockquote>It is the heart of life to have a real meeting with another human being.</blockquote>
-  <p class="meta"><span class="attribution">Fay Honey Knopp</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Fay Honey Knopp</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="No live organism can continue for long to exist sanely under conditions of absolute reality. Shirley Jackson">
   <blockquote>No live organism can continue for long to exist sanely under conditions of absolute reality.</blockquote>
-  <p class="meta"><span class="attribution">Shirley Jackson</span> · <time>2026-05-18</time></p>
+  <p class="meta"><span class="attribution">Shirley Jackson</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="You must write, and read, as if your life depended on it. Adrienne Rich">
   <blockquote>You must write, and read, as if your life depended on it.</blockquote>
-  <p class="meta"><span class="attribution">Adrienne Rich</span> · <time>2026-05-16</time></p>
+  <p class="meta"><span class="attribution">Adrienne Rich</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="The beautiful thing about learning is nobody can take it away from you. B.B. King">
   <blockquote>The beautiful thing about learning is nobody can take it away from you.</blockquote>
-  <p class="meta"><span class="attribution">B.B. King</span> · <time>2026-05-14</time></p>
+  <p class="meta"><span class="attribution">B.B. King</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Art is made to disturb. Science reassures. Georges Braque">
   <blockquote>Art is made to disturb. Science reassures.</blockquote>
-  <p class="meta"><span class="attribution">Georges Braque</span> · <time>2026-05-12</time></p>
+  <p class="meta"><span class="attribution">Georges Braque</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Calm and order can be just as dangerous to democracy as uneasiness and disorder. Hildegard Hamm-Brücher">
   <blockquote>Calm and order can be just as dangerous to democracy as uneasiness and disorder.</blockquote>
-  <p class="meta"><span class="attribution">Hildegard Hamm-Brücher</span> · <time>2026-05-12</time></p>
+  <p class="meta"><span class="attribution">Hildegard Hamm-Brücher</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="It’s no measure of health to be well adjusted to a profoundly sick society. Jiddu Krishnamurti">
   <blockquote>It’s no measure of health to be well adjusted to a profoundly sick society.</blockquote>
-  <p class="meta"><span class="attribution">Jiddu Krishnamurti</span> · <time>2026-05-11</time></p>
+  <p class="meta"><span class="attribution">Jiddu Krishnamurti</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="There is some risk involved in action, there always is. But there is far more risk in failure to act. Harry S. Truman">
   <blockquote>There is some risk involved in action, there always is. But there is far more risk in failure to act.</blockquote>
-  <p class="meta"><span class="attribution">Harry S. Truman</span> · <time>2026-05-08</time></p>
+  <p class="meta"><span class="attribution">Harry S. Truman</span></p>
 </article>
-<article class="quote">
+<article class="quote" data-search="Real stupidity beats artificial intelligence every time. Terry Pratchett">
   <blockquote>Real stupidity beats artificial intelligence every time.</blockquote>
-  <p class="meta"><span class="attribution">Terry Pratchett</span> · <time>2026-04-27</time></p>
+  <p class="meta"><span class="attribution">Terry Pratchett</span></p>
 </article>
 </main>
+<p class="empty" id="empty">No quotes match.</p>
 <footer>
-  128 quotes · last sync 2026-05-18 19:22 UTC ·
+  128 quotes ·
   <a href="https://github.com/rolotumazi/echo">source</a>
 </footer>
+<script>
+(() => {
+  const input = document.getElementById('q');
+  const count = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  const quotes = Array.from(document.querySelectorAll('.quote'));
+  const total = quotes.length;
+  const haystacks = quotes.map(el => (el.dataset.search || '').toLowerCase());
+  const originals = quotes.map(el => ({
+    quote: el.querySelector('blockquote'),
+    attr: el.querySelector('.attribution'),
+    qHTML: el.querySelector('blockquote').innerHTML,
+    aHTML: el.querySelector('.attribution') ? el.querySelector('.attribution').innerHTML : null,
+  }));
+
+  function escapeRE(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  function escapeHTML(s) {
+    return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function highlight(text, term) {
+    if (!term) return escapeHTML(text);
+    const re = new RegExp('(' + escapeRE(term) + ')', 'gi');
+    return escapeHTML(text).replace(re, '<mark>$1</mark>');
+  }
+
+  function apply() {
+    const raw = input.value.trim();
+    const term = raw.toLowerCase();
+    let shown = 0;
+    quotes.forEach((el, i) => {
+      const match = !term || haystacks[i].includes(term);
+      el.classList.toggle('hidden', !match);
+      if (match) {
+        shown++;
+        if (term) {
+          originals[i].quote.innerHTML = highlight(originals[i].quote.textContent, raw);
+          if (originals[i].attr) originals[i].attr.innerHTML = highlight(originals[i].attr.textContent, raw);
+        } else {
+          originals[i].quote.innerHTML = originals[i].qHTML;
+          if (originals[i].attr) originals[i].attr.innerHTML = originals[i].aHTML;
+        }
+      }
+    });
+    count.textContent = term ? `${shown} of ${total}` : `${total} quotes`;
+    empty.classList.toggle('show', shown === 0);
+  }
+
+  input.addEventListener('input', apply);
+  apply();
+})();
+</script>
 </body>
 </html>
