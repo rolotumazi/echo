@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> True peace is not merely the absence of war, it is the presence of justice.
+
+— **Jane Addams**
+
+---
+
 > That so few now dare to be eccentric, marks the chief danger of the time.
 
 — **John Stuart Mill**
@@ -786,4 +792,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_130 quotes_
+_131 quotes_
