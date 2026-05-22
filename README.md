@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> An artist must be free to choose what he does, certainly, but he must also never be afraid to do what he might choose.
+
+— **Langston Hughes**
+
+---
+
 > True peace is not merely the absence of war, it is the presence of justice.
 
 — **Jane Addams**
@@ -792,4 +798,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_131 quotes_
+_132 quotes_
