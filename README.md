@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Nature provides exceptions to every rule.
+
+— **Margaret Fuller**
+
+---
+
 > An artist must be free to choose what he does, certainly, but he must also never be afraid to do what he might choose.
 
 — **Langston Hughes**
@@ -798,4 +804,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_132 quotes_
+_133 quotes_
