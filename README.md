@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> For every minute you are angry you lose sixty seconds of happiness.
+
+— **Ralph Waldo Emerson**
+
+---
+
 > Nature provides exceptions to every rule.
 
 — **Margaret Fuller**
@@ -804,4 +810,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_133 quotes_
+_134 quotes_
