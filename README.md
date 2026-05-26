@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> If my heart isn’t in my mouth it’s because it knows its place.
+
+— **Phyllis Gotlieb**
+
+---
+
 > For every minute you are angry you lose sixty seconds of happiness.
 
 — **Ralph Waldo Emerson**
@@ -810,4 +816,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_134 quotes_
+_135 quotes_
