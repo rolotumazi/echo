@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> The hottest places in hell are reserved for those who, in times of great moral crisis, maintain their neutrality
+
+— **Dante Alighieri**
+
+---
+
 > If my heart isn’t in my mouth it’s because it knows its place.
 
 — **Phyllis Gotlieb**
@@ -816,4 +822,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_135 quotes_
+_136 quotes_
