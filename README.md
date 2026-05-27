@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> It is not half so important to know as to feel.
+
+— **Rachel Carson**
+
+---
+
 > The hottest places in hell are reserved for those who, in times of great moral crisis, maintain their neutrality
 
 — **Dante Alighieri**
@@ -822,4 +828,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_136 quotes_
+_137 quotes_
