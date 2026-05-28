@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Conformity is the jailer of freedom and the enemy of growth.
+
+— **John F. Kennedy**
+
+---
+
 > Where hope rises fear must lurk behind.
 
 — **Anne Brontë**
@@ -834,4 +840,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_138 quotes_
+_139 quotes_
