@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Where hope rises fear must lurk behind.
+
+— **Anne Brontë**
+
+---
+
 > It is not half so important to know as to feel.
 
 — **Rachel Carson**
@@ -828,4 +834,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_137 quotes_
+_138 quotes_
