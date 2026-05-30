@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Blessed is he who expects nothing, for he shall never be disappointed.
+
+— **Alexander Pope**
+
+---
+
 > Conformity is the jailer of freedom and the enemy of growth.
 
 — **John F. Kennedy**
@@ -840,4 +846,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_139 quotes_
+_140 quotes_
