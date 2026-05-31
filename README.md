@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Guilt is born in the same hour with pleasure, like anything in this universe and its enemy.
+
+— **Ama Ata Aidoo**
+
+---
+
 > Blessed is he who expects nothing, for he shall never be disappointed.
 
 — **Alexander Pope**
@@ -846,4 +852,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_140 quotes_
+_141 quotes_
