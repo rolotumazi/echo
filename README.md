@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Half of life’s heartaches come from decisions made in a hurry.
+
+— **Marilyn Monroe**
+
+---
+
 > Guilt is born in the same hour with pleasure, like anything in this universe and its enemy.
 
 — **Ama Ata Aidoo**
@@ -852,4 +858,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_141 quotes_
+_142 quotes_
