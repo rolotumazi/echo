@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Women, like men, ought to have their years so glutted with freedom that they hate the very idea of freedom.
+
+— **Vita Sackville-West**
+
+---
+
 > Half of life’s heartaches come from decisions made in a hurry.
 
 — **Marilyn Monroe**
@@ -858,4 +864,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_142 quotes_
+_143 quotes_
