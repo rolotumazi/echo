@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Failure is not fatal but failure to change might be.
+
+— **John Wooden**
+
+---
+
 > Women, like men, ought to have their years so glutted with freedom that they hate the very idea of freedom.
 
 — **Vita Sackville-West**
@@ -864,4 +870,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_143 quotes_
+_144 quotes_
