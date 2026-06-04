@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> We should do more and talk less.
+
+— **Mary Ann Shadd Cary**
+
+---
+
 > Failure is not fatal but failure to change might be.
 
 — **John Wooden**
@@ -870,4 +876,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_144 quotes_
+_145 quotes_
