@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Who looks outside dreams; who looks inside awakes.
+
+— **Carl Jung**
+
+---
+
 > We should do more and talk less.
 
 — **Mary Ann Shadd Cary**
@@ -876,4 +882,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_145 quotes_
+_146 quotes_
