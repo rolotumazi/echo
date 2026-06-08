@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> I doubt if there is anything in the world uglier than a Midwestern city.
+
+— **Frank Lloyd Wright**
+
+---
+
 > Who looks outside dreams; who looks inside awakes.
 
 — **Carl Jung**
@@ -882,4 +888,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_146 quotes_
+_147 quotes_
