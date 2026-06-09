@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Nothing is invented, for it’s written in nature first.
+
+— **Antoni Gaudí**
+
+---
+
 > A word in earnest is as good as a speech.
 
 — **Charles Dickens**
@@ -894,4 +900,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_148 quotes_
+_149 quotes_
