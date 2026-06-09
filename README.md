@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> A word in earnest is as good as a speech.
+
+— **Charles Dickens**
+
+---
+
 > I doubt if there is anything in the world uglier than a Midwestern city.
 
 — **Frank Lloyd Wright**
@@ -888,4 +894,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_147 quotes_
+_148 quotes_
