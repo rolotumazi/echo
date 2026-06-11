@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> Language most shows a man; speak that I may see thee.
+
+— **Ben Jonson**
+
+---
+
 > Nothing is invented, for it’s written in nature first.
 
 — **Antoni Gaudí**
@@ -900,4 +906,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_149 quotes_
+_150 quotes_
