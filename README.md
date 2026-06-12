@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> The final forming of a person’s character lies in their own hands.
+
+— **Anne Frank**
+
+---
+
 > Language most shows a man; speak that I may see thee.
 
 — **Ben Jonson**
@@ -906,4 +912,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_150 quotes_
+_151 quotes_
