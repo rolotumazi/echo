@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> No intelligent idea can gain general acceptance unless some stupidity is mixed in with it.
+
+— **Fernando Pessoa**
+
+---
+
 > The final forming of a person’s character lies in their own hands.
 
 — **Anne Frank**
@@ -912,4 +918,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_151 quotes_
+_152 quotes_
