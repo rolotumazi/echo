@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> You do not change people’s minds by defeating them with logic.
+
+— **Herbert A. Simon**
+
+---
+
 > No intelligent idea can gain general acceptance unless some stupidity is mixed in with it.
 
 — **Fernando Pessoa**
@@ -918,4 +924,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_152 quotes_
+_153 quotes_
