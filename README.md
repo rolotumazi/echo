@@ -6,6 +6,12 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
+> True power is living the realisation that you do not have to own, possess, or dominate everything you love. You can just appreciate it, let it be, and move on lightly.
+
+— **Yung Pueblo**
+
+---
+
 > You do not change people’s minds by defeating them with logic.
 
 — **Herbert A. Simon**
@@ -924,4 +930,4 @@ Rendered page: <https://rolotumazi.github.io/echo/>
 
 ---
 
-_153 quotes_
+_154 quotes_
